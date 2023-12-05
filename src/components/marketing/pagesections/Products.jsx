@@ -11,7 +11,9 @@ export default function Products() {
   return (
     <Container>
       <HeadingTitles>Toujours des délicieux burgers</HeadingTitles>
-      <Heading theme="font-secondary">Choisissez et savourez</Heading>
+      <Heading theme="font-secondary" alignement="center" className="my-5">
+        Choisissez et savourez
+      </Heading>
 
       <p className="text-center">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum labore
@@ -30,7 +32,9 @@ export default function Products() {
           </div>
 
           <div className="flex flex-col items-center justify-center px-5 pb-5">
-            <Heading variant="h3 ">Lorem ipsa dolor</Heading>
+            <Heading variant="h3" className="my-5">
+              Lorem ipsa dolor
+            </Heading>
             <p className="text-center ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
@@ -50,7 +54,9 @@ export default function Products() {
           </div>
 
           <div className="flex flex-col items-center justify-center px-5 pb-5">
-            <Heading variant="h3 ">Lorem ipsa dolor</Heading>
+            <Heading variant="h3" className="my-5">
+              Lorem ipsa dolor
+            </Heading>
             <p className="text-center ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
@@ -70,7 +76,9 @@ export default function Products() {
           </div>
 
           <div className="flex flex-col items-center justify-center px-5 pb-5">
-            <Heading variant="h3 ">Lorem ipsa dolor</Heading>
+            <Heading variant="h3" className="my-5">
+              Lorem ipsa dolor
+            </Heading>
             <p className="text-center ">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>

@@ -6,11 +6,13 @@ export default function Heading(props) {
     variant,
     theme, //style
     display, //color
+    alignement,
+    className,
   } = props;
 
-  const classDefault = "mt-5 uppercase ";
+  const classDefault = "uppercase ";
 
-  let font, color;
+  let font, color, align;
 
   switch (theme) {
     case "font-secondary":
@@ -28,22 +30,45 @@ export default function Heading(props) {
       color = "text-secondary";
   }
 
+  switch (alignement) {
+    case "center":
+      align = "justify-center";
+      break;
+    case "right":
+      align = "justify-end";
+      break;
+    default:
+      align = "justify-start";
+  }
+
   switch (variant) {
     case "h3":
       return (
-        <div className="flex items-center justify-center my-5">
-          <h3 className={`text-2xl  ${classDefault} ${font} ${color}`}>
+        <div className={`flex ${align}`}>
+          <h3
+            className={`text-2xl  ${classDefault} ${font} ${color} ${className}`}
+          >
+            {children}
+          </h3>
+        </div>
+      );
+    case "h4":
+      return (
+        <div className={`flex ${align}`}>
+          <h3
+            className={`text-lg ${classDefault} ${font} ${color} ${className}`}
+          >
             {children}
           </h3>
         </div>
       );
     default:
       return (
-        <div className="flex items-center justify-center my-5">
+        <div className={`flex ${align}`}>
           <h2
             className={`${
               theme === "font-secondary" ? "text-5xl" : "text-3xl"
-            }  ${classDefault} ${font} ${color}`}
+            }  ${classDefault} ${font} ${color} ${className}`}
           >
             {children}
           </h2>
