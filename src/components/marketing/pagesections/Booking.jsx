@@ -14,7 +14,7 @@ export default function Booking() {
         <img
           src={Assiete}
           alt=""
-          className="absolute w-96 -bottom-44 -right-28"
+          className="absolute w-96 -bottom-56 -right-28"
         />
         <div className="max-w-3xl mx-auto px-10 py-20">
           <Heading variant="h3" alignement="center">
