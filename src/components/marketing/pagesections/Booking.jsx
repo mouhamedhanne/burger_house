@@ -14,7 +14,7 @@ export default function Booking() {
         <img
           src={Assiete}
           alt=""
-          className="absolute w-96 -bottom-44 -right-28"
+          className="absolute w-72 -bottom-14 -right-16"
         />
         <div className="max-w-3xl mx-auto px-10 py-20">
           <Heading variant="h3" alignement="center">
@@ -90,13 +90,13 @@ export default function Booking() {
 
             <div>
               <label htmlFor="sendBooking" className="invisible">
-                Reservez votre repas
+                Trouver une table
               </label>
               <input
                 type="button"
                 name="sendBooking"
                 id="sendBooking"
-                value="Reservez votre repas"
+                value="Trouver une table"
                 className="bg-red_primary hover:bg-red_primary_hover w-full
                  text-white font-font_secondary tracking-widest uppercase py-5
                   rounded-md cursor-pointer animate"
